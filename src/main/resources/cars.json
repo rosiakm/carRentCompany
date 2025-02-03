@@ -1,19 +1,12 @@
 {
   "cars" : [ {
-    "brand" : "Renault",
-    "model" : "Captur",
-    "prodYear" : 2022
-  }, {
-    "brand" : "Renault",
-    "model" : "Clio",
-    "prodYear" : 2014
-  }, {
-    "brand" : "Renault",
-    "model" : "Clio",
-    "prodYear" : 2014
-  }, {
     "brand" : "Kia",
     "model" : "Sportage",
-    "prodYear" : 2023
+    "prodYear" : 2023,
+    "id" : 1,
+    "isAvailable" : true,
+    "rentDetails": {
+      "rentExpireDate": null
+    }
   } ]
 }

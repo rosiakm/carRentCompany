@@ -9,8 +9,9 @@ public class Main {
         CarsManager carsManager = new CarsManager();
 
         //cars.countCarsAge("Renault", "Captur");
-        //cars.printCarsByAge(2020);
-        //carsManager.addCar("Kia","Sportage",2023);
-        carsManager.printCarsByAge(2018);
+        carsManager.addCar("Kia","Sportage",2023);
+        //carsManager.printCarsByAge(2018);
+        //carsManager.printCarsByAge(2018);
+        //carsManager.returnCar(1);
     }
 }
