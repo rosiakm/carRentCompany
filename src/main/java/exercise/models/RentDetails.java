@@ -1,25 +1,22 @@
 package exercise.models;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.Date;
 
 public class RentDetails {
 
-    @JsonProperty
-    private Date rentExpireDate;
+    @JsonProperty("rentExpireDate")
+    private String rentExpireDate;
 
     public RentDetails(){}
 
-    public RentDetails(Date rentExpireDate) {
+    public RentDetails(String rentExpireDate) {
         this.rentExpireDate = rentExpireDate;
     }
 
-    public Date getRentExpireDate() {
+    public String getRentExpireDate() {
         return rentExpireDate;
     }
 
-    public void setRentExpireDate(Date rentExpireDate) {
+    public void setRentExpireDate(String rentExpireDate) {
         this.rentExpireDate = rentExpireDate;
     }
 

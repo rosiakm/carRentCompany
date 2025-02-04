@@ -3,15 +3,25 @@ package exercise.runner;
 import exercise.models.CarsManager;
 
 import java.io.IOException;
+import java.util.Scanner;
+
+import static exercise.helpers.Menu.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         CarsManager carsManager = new CarsManager();
+        Scanner scanner = new Scanner(System.in);
 
-        //cars.countCarsAge("Renault", "Captur");
-        carsManager.addCar("Kia","Sportage",2023);
-        //carsManager.printCarsByAge(2018);
-        //carsManager.printCarsByAge(2018);
-        //carsManager.returnCar(1);
+        while (true){
+            printMenu();
+            int option = scanner.nextInt();
+            switch (option){
+                case 1 -> addNewCarMenu(scanner);
+                case 2 -> carsManager.printTheCarList();
+                case 3 -> countCarsAgeMenu(scanner);
+                case 4 -> printCarsByAgeMenu(scanner);
+                case 7 -> System.exit(0);
+            }
+        }
     }
 }

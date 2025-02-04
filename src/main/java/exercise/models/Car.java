@@ -16,7 +16,7 @@ public class Car {
     private int id;
     @JsonProperty("isAvailable")
     private boolean isAvailable;
-    @JsonProperty
+    @JsonProperty("rentDetails")
     private RentDetails rentDetails;
 
     public Car(){}
