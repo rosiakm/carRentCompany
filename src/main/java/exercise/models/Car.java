@@ -64,10 +64,6 @@ public class Car {
         this.isAvailable = isAvailable;
     }
 
-    public void setRentDetails(RentDetails rentDetails){
-        this.rentDetails = rentDetails;
-    }
-
     public String toString(){
         return "Car brand: " + brand + ", model: " + model + ", production year: " + prodYear + ", id: " + id + ", is available: " + isAvailable;
     }

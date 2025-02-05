@@ -5,11 +5,12 @@ import exercise.models.CarsManager;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Menu {
+public class MenuManager {
 
     public static CarsManager manager = new CarsManager();
 
     public static void printMenu(){
+        System.out.println(" ");
         System.out.println("Please choose one option");
         System.out.println("1. Add a new car");
         System.out.println("2. Show the complete list of cars");
@@ -51,5 +52,19 @@ public class Menu {
         int minProdYear = scanner.nextInt();
 
         manager.printCarsByAge(minProdYear);
+    }
+
+    public static void rentACarMenu(Scanner scanner) throws IOException {
+        System.out.println("Provide cars id number");
+        int id = scanner.nextInt();
+
+        manager.rentCar(id);
+    }
+
+    public static void returnACarMenu(Scanner scanner) throws IOException {
+        System.out.println("Provide car id number");
+        int id = scanner.nextInt();
+
+        manager.returnCar(id);
     }
 }

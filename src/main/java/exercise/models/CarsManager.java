@@ -88,8 +88,8 @@ public class CarsManager {
             System.out.println("You can't return it back!");
         } else {
             car.setIsAvailable(true);
-            countFine(convertStringToLocalDate(car.getRentDetails().getRentExpireDate()));
             System.out.println("Thanks for returning " + car.getBrand() + " " + car.getModel() + " with id " + car.getId());
+            countFine(convertStringToLocalDate(car.getRentDetails().getRentExpireDate()));
         }
 
         car.getRentDetails().setRentExpireDate(null);

@@ -10,9 +10,9 @@ public class CarList {
 
     public CarList(){}
 
-    public CarList(List<Car> cars){
+/*    public CarList(List<Car> cars){
         this.cars = cars;
-    }
+    }*/
 
     public List<Car> getCars() {
         return cars;

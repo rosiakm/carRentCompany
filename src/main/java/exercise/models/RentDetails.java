@@ -8,9 +8,9 @@ public class RentDetails {
 
     public RentDetails(){}
 
-    public RentDetails(String rentExpireDate) {
+/*    public RentDetails(String rentExpireDate) {
         this.rentExpireDate = rentExpireDate;
-    }
+    }*/
 
     public String getRentExpireDate() {
         return rentExpireDate;
